@@ -1,0 +1,53 @@
+Codekata - Day 1
+
+Programming:
+            Machine Understandable language,
+            To give instruction to the computer,
+            Reduce human effort.
+            
+Variables:
+
+Values -> You can store different things!
+  
+
+        Variable Name
+              |
+* var        toy         =      "train";
+   |                               |
+variable                         value
+
+
+var toys = "JCB"; //String
+var noOfToys = 2; //Number
+
+Task: age - 18
+var age = 18;
+
+Variable Types:
+1. String
+2. Number
+
+String:
+
+=> length()
+=> toUpperCase(), toLowerCase()
+=> charAt()
+=> substring()
+=> split()
+=> indexOf()
+=> replace()
+=> trim()
+
+1. length - returns the number of character is a string.
+Example:
+       var fruits = "Apple";
+       console.log(fruits.length);
+       // "Apple" -> word
+       // "Apple is a fruit" -> sentence
+
+2. toUpperCase() & toLowerCase(): Convert a string to Uppercase or lowercase.
+Example:
+       var name = "thiru";
+       console.log(name.toUpperCase());
+
+Screenshot: windows button + prtscr

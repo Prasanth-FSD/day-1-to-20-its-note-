@@ -1,0 +1,50 @@
+For loop: set of instructions that you follow over and over again until you are done.
+          
+Syntax:
+       for(initialization; condition; updating){
+         //code
+       }
+
+Example:
+var toys = ["ball", "car", "jcb", "train", "helicopter"];
+console.log("Playing with toys using for loop");
+
+for(var i=0; i<toys.length; i++){    
+    console.log("Playing with toys", toys[i]);
+}
+toys[0] = ball
+toys[1] = car
+
+console.log("Play time over!");
+
+While loop: following set of instruction until a certain condition met.
+
+Syntax: 
+      while(condition){
+        //body along with statement terminating at same point
+      }
+
+Example:
+var batteryLevel = 5;
+console.log("Game Starts!");
+while(batteryLevel > 0){
+        0          > 0
+    console.log("Playing with Remote Control Car!");
+    batteryLevel--;
+}
+console.log("Battery is Empty, Game End!");
+
+Task: switch case(tv,fan,light) tv - on
+
+Array: it can hold many items, each item has it own number,
+       add new items, remove items, it can be changed.
+  
+Array Methods:
+  
+1.Push(): this methods add one or more element to end of an array.
+  
+2.Pop(): this methods remove the last element from an array.
+  
+3.Unshift(): this method add one or more element to the begining of an array.
+  
+4.Shift(): this method removes the first element from an array.

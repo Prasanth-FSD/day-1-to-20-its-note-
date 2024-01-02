@@ -1,0 +1,196 @@
+var a;
+var b;
+var c;
+a=userInput[0];
+b=userInput[1];
+c=userInput[2];
+console.log(a,b,c);
+   
+
+
+pastebin - https://www.pastiebin.com/6549b20219030
+
+
+
+
+Terinary Operator:
+
+Syntax:
+condition ? true : false
+  
+Example:
+var x = 2;
+x % 2 === 0 ? console.log("Even") : console.log("Odd");
+  
+Array -> [] / Object -> {}  
+  
+Object:
+
+var car = {
+ //Key   value
+  wheels: 4,
+  color: "red",
+  milege: 15,
+  brand: "BMW"
+}
+console.log(car.brand);
+
+Task: Person(name, age, gender, state) - print state
+var person = {
+ //Key   value
+  name: "FSD",
+  age: 26,
+  gender: "male",
+  state: "Tamilnadu"
+}
+console.log(person.state);
+
+Codekata link: https://www.guvi.in/code-kata/
+
+Codekata Template:
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+  //Your code goes here … replace the below line with your code logic 
+
+
+
+  //end-here
+});
+
+Sum 1:
+
+Write a code to get the input in the given format and print the output in the given format
+
+Input Description:
+Three integers are given in line by line.
+
+Output Description:
+Print the integers in a single line separate by space.
+
+Sample Input :
+2
+4
+5
+Sample Output :
+2 4 5
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+  //Your code goes here … replace the below line with your code logic 
+var a;
+var b;
+var c;
+a = userInput[0];
+b = userInput[1];
+c = userInput[2];
+
+console.log(a,b,c);
+ 
+
+  //end-here
+});
+
+Sum 2:
+
+Write a code to get the input in the given format and print the output in the given format
+
+Input Description:
+To take an integer value
+
+Output Description:
+Print the integer value
+
+Sample Input :
+2
+Sample Output :
+2
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+  //Your code goes here … replace the below line with your code logic 
+var a = userInput[0];
+console.log(a);
+
+  //end-here
+});
+
+
+Sum 3:
+
+Sample input: 35
+Sample Output: PASS
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+  //Your code goes here … replace the below line with your code logic 
+var mark = parseInt(userInput[0]);
+if(mark >= 35){
+    console.log("PASS");
+} else {
+    console.log("FAIL");
+}
+
+  //end-here
+});
+
+Sum 4:
+
+Sample Input: 
+1
+1
+
+Sample Output:
+2

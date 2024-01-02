@@ -1,0 +1,43 @@
+https://www.pastiebin.com/6549b20219030
+
+GUVI IDE - https://www.guvi.in/ide/?id=6503d7aa8683e
+
+Online Compiler - https://www.programiz.com/javascript/online-compiler/
+
+3. charAt(): returns the character as a specified index of a string.
+Example:
+       "t r a i n" -> position
+        0 1 2 3 4
+
+var toy = "train";
+console.log(toy.charAt(0));
+
+4. substring(): extract a position of a string between two specified index(position).
+Example:
+        var toy = "train";
+        console.log(toy.substring(1,5));
+        Task: rain
+
+5. Split(): split is a string into an array of substring based on specified separator.
+
+     * Array:
+     var name = "thiru";
+     var age = 18;
+
+     var person = ["thiru", 18, "male", "Developer"];
+
+Example:
+        var myString = "Hello, World";
+        var myArray = myString.split(",");
+        console.log(myArray);
+
+
+6. indexOf(): returns the index of first occurence of a special value in a string.
+Example:
+        var myString = "common";
+        console.log(myString.indexOf("o"));
+
+7. replace(): replace a specified value with a new value.
+Example:
+        var myString = "Nume";
+        console.log(myString.replace("u","a"));

@@ -1,0 +1,102 @@
+Day - 10: CSS
+
+Box Model:
+it is a box that is wrapped around an every HTML element.
+it consist of 
+Margin, Padding, Border
+
+ margin-top: 20px;
+ margin-left: 20px;
+ margin-right: 20px;
+ margin-bottom: 20px;
+
+to avoid above scenario we use short hand notation
+all the sides we can write it on single line
+margin apply values in clockwise sides
+Ex: margin: 20px 20px   20px    2px;
+            top, right, bottom, left.
+
+Example:
+.main{
+   background: blanchedalmond;
+   height: 250px;
+   width: 100%;
+   padding: 50px;
+   margin-top: 50px;
+}
+
+.main1{
+    width: 150px;
+    height: 150px;
+    background: skyblue;
+    margin-left: 20px;
+    padding: 10px;
+    /* border-top-width: 2px;
+    border-top-style: dashed;
+    border-top-color: brown; */
+    border: 2px dashed brown;
+    text-align: center;
+}
+
+Position Properties:
+need: even through if you have top,left,bottom and right which can be used to place/align the element in the web page.
+1.Static
+2.Relative
+3.Absolute
+4.Fixed
+5.Sticky
+
+1.Static: they are not affected by top,left,bottom or right.
+By default all the html elements are positioned static.
+
+2.Relative: they are affected by top,left,bottom or right.
+
+3.Absolute: they are affected by top,left,bottom or right,
+            it will affect the document flow.
+            a space created for them in a document.
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 | Learn HTML, CSS</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="main1">
+        <div class="main2"></div>
+    </div>
+    
+    <div class="main3"></div>
+    <div class="main4"></div>
+    
+</body>
+</html>
+
+.main1{
+    width: 250px;
+    height: 150px;
+    background: red;
+    border: 2px solid black;
+    margin-top: 50px;
+    position: relative;
+}
+.main2{
+    width: 80px;
+    height: 30px;
+    background: yellow;
+    border: 2px solid black;
+    position: absolute;
+    top: 1px;
+}
+.main3{
+    width: 250px;
+    height: 80px;
+    background: skyblue;
+    border: 2px solid black;
+}
+
+Practice: Webkata
+https://positiondemo.netlify.app/

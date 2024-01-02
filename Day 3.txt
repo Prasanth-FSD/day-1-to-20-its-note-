@@ -1,0 +1,79 @@
+8.trim(): removes whitespace from both end of a string.
+Example:
+       var arr = "  Hello  ";
+       console.log(arr.trim());
+
+Boolean: True/False
+
+Example:
+var age = 17;
+console.log(age>=18);
+
+if:
+Syntax:
+      if(condition){
+        //Code to be executed when the condition is true
+      }else{
+      }
+
+Example:
+var a = 3;
+if(a % 2 == 0){
+   console.log("Even"); 
+} else {
+    console.log("Odd");
+}
+
+== - only check values
+=== - both values and type
+
+Example:
+
+var a = 0;     // Number
+var b = 0;    //  String
+console.log(a===b);
+
+Else if:
+
+var age = 18;
+
+if(age<25){
+    console.log("Jolly Person!");
+} else if(age==25){
+            console.log("Life is started!");
+        } else {
+            console.log("All the best!");
+        }
+
+Switch case: It basically act like a switch board.
+
+Syntax:
+      switch(variable to be checked){
+        case value1:
+          // code to be executed when variable to be checked matches
+          break;
+        case value2:
+          //
+          break;
+        default:
+      }
+
+Example:
+
+var category = "person";
+switch(category){
+    case "kids":
+        console.log("Go to School");
+        break;
+        
+        case "men":
+            console.log("Go to Heaven");
+            break;
+            
+            case "women":
+                console.log("Go to world");
+                break;
+                
+                default:
+                console.log("You are a alien");
+}

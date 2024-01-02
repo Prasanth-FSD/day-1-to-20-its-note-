@@ -1,0 +1,213 @@
+Day - 3
+
+// Primitive data types
+// In built data types
+// Number, string, boolean
+// Number: includes decimal
+// String: characters
+// Boolean: boolean data type
+
+// Complex Data Types:
+// Array and Objects
+var array = [1,2,3,4];
+console.log(array.length);
+array[100] = 5;
+console.log(array.length);
+// Array name is the starting address of the array
+
+//1: Key:Value pair
+//2: Async
+
+// Objects:
+// 1. Object are a structure of K:V pair
+// Syntax: var objectName = { key: value };
+
+// Object name is also called as the reference name
+// Object don't have index
+
+//Accessing the elements inside the object
+// we can access the element of the object using keyname
+// DOT method (.)
+// Syntax: objname.keyname
+var student = {
+  name: "john",
+  age: 26,
+  gender: "male"
+}
+
+console.log(student.name);
+
+// 2nd method: box method 
+// Syntax: objname["keyname"];
+var student = {
+  name: "john",
+  age: 26,
+  gender: "male"
+}
+
+console.log(student["name"]);
+
+// Applicable in looping
+// Printing the objects
+// for-in loop
+// It is applicable only for object
+// Syntax: for(var key in objName){//code}
+var student = {
+  name: "john",
+  age: 26,
+  gender: "male"
+}
+for(var a in student){
+  console.log(a, student[a]);
+}
+
+// Key: name, age, gender
+
+Task: Firstname, lastname, batch, mentor
+
+// Insertion:
+// Here a new k:v pair will be added at the end of the line
+// Syntax: objName.keyname = value;
+student.batch = "FSD54WD-Tamil";
+console.log(student);
+
+// Updation:
+// it will be applicable for the key which is already present
+// Syntax: objName.keyname = value;
+
+Example:
+var student = {
+  name: "john",
+  age: 26,
+  gender: "male"
+}
+
+student.batch = "FSD54WD-Tamil";
+console.log(student);
+student.name = "john wick";
+console.log(student);
+
+// Deletion
+// Syntax: delete objName.keyname
+Task:
+delete student.gender;
+console.log(student);
+
+// JSON: Javascript Object Notation
+
+var student = {
+  "name": "john",
+  "age": "26",
+  "gender": "male"
+}
+
+// it look similar to an object but, not then object
+// conversion from xml to json was the difficult
+// Advantanges: converting into an array, obj, str etc is easy.
+var student = {
+  "name": "john",
+  "age": "26",
+  "gender": "male"
+}
+
+console.log(student.name);
+
+// Copy by value
+// it is applicable to the primitive data types.
+    var x = 7;  ------------------7(x)
+	var y = x;  ------------------7(y)
+	x=8; -------------------------8(x)
+	x=9; -------------------------9(x)
+	console.log(x, y);
+
+// Copy by reference
+// it is applicable for the complex data types
+var arr = [4,5,6]
+var res=arr;
+console.log(arr);
+
+Codekata - Day 9- 22.11.23
+SESSION 1 : 9 AM - 10:30 AM 
+MENTOR - Thiru
+
+
+Array of JSON , API , Array of JSON ,XML , Rest Countries
+
+https://www.pastiebin.com/655c2781c2434
+
+
+
+// Array of JSON
+var a = [{"batch": "B54wd Tamil",
+           "course": "FSD"},
+          {"name": "joe",
+            "age": "23"},
+          {"mentor": "thiru"}]
+            
+console.log(a[1].name);
+
+// API - Application Programming Interface
+
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>API Session</h1>
+    <script src="script.js"></script>
+</body>
+</html>
+
+Script.js
+
+// Step 01: Create a XHR Object
+var request = new XMLHttpRequest();
+// Step 02: Specify the API
+request.open("GET", "https://restcountries.com/v2/all");
+// Step 03: Sending the request
+request.send();
+//Step 04: Once the requested data is there in server once data is successfully loaded
+//Server response will be of 200 status code.
+//Functions: they are used to perform specific task
+request.onload = function () {
+    var result = JSON.parse(request.response);
+    console.log(result);
+}
+
+Extension: HTML CSS Support, JavaScript (ES6) code snippets, Live Server
+
+// API
+// JSON
+// Array of JSON
+// XMLHTTP - FETCH
+// REST COUNTRIES
+
+
+
+Sample Input :
+2
+4
+5
+Sample output :
+2 4 5
+
+Sample Input :
+guvi--------------------------------["guvi"]
+Sample Output :
+g u v i
+
+Sample Input :
+2.3 4.5 7.8
+Sample Output :
+2.3
+4.5
+7.8
+
+Task hint: spilt, join, how to print next line in console.log
+
+ 

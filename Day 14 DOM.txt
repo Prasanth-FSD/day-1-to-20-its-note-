@@ -1,0 +1,58 @@
+Day - 14
+
+// document.getElementsById
+this method is applicable if you have id attribute in HTML element.
+this element must be in html file
+extract here in js
+it returns the html element
+
+Example:
+var res = document.getElementById("main");
+console.log(res);
+
+// document.getElementsByClassName
+this method is applicable if you have class attribute in HTML element.
+the output of the method is an array.
+
+Example:
+var res = document.getElementsByClassName("main");
+console.log(res);
+
+// document.getElementsByTagName
+this method is applicable if you have tag selector.
+output also will be an array.
+
+Example:
+var res = document.getElementsByTagName("span");
+console.log(res);
+
+// document.querySelector
+i need to extract the first occurence of the html
+will select the first occurence of the html.
+it returns the html element
+
+Example:
+var res = document.querySelector("h1");
+console.log(res);
+
+// document.querySelectorAll
+i need to extract the first occurence of the html
+will select the all occurence of the html.
+it returns the output in terms of an array.
+
+Task:
+b54wdtamil@gmail.com - valid user - invalid
+
+<label for="email">Email</label><br>
+<input type="email" id="email"><br>
+<button type="button" onclick="valid()">Submit</button>
+
+function valid(){
+    var result = document.getElementById("email").value;
+    // console.log(result);
+    if(result == "b54wdtamil@gmail.com"){
+        console.log("Correct Email");
+    }else{
+        console.log("Wrong Email");
+    }
+}
